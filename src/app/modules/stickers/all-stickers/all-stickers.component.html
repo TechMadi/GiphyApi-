@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 col-12 w-75 mx-auto">
+      <button class="btn btn-warning mt-2" [routerLink]="['/home']">
+        Back
+      </button>
+      <app-search (searchTerm)="getSearchTerm($event)"></app-search>
+    </div>
+    <div class="col-12 col-md-10 mx-auto">
+      <div class="row d-flex justify-content-center">
+        <div
+          class="col-md-3 col-12 my-auto"
+          *ngFor="let sticker of stickers; let i = index"
+        >
+          <div class="card text-center">
+            <img
+              [src]="sticker.images.fixed_height.url"
+              alt=""
+              class="card-img-top"
+            />
+            <p class="text-capitalize text-white">
+              {{ sticker.title }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

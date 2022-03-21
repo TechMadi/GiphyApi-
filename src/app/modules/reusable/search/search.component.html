@@ -1,0 +1,28 @@
+<form
+  action=""
+  class="form-inline"
+  [formGroup]="searchForm"
+  ngSubmit="search(searchForm)"
+>
+  <label class="sr-only" for="inlineFormInputGroupUsername2">Username</label>
+  <div class="input-group">
+    <input
+      type="text"
+      class="form-control"
+      id="inlineFormInputGroupUsername2"
+      placeholder="Search ......."
+      formControlName="search"
+    />
+    <div class="input-group-prepend">
+      <div class="input-group-text bg-primary">
+        <button
+          type="submit"
+          (click)="search(searchForm)"
+          class="btn btn-primary"
+        >
+          😁
+        </button>
+      </div>
+    </div>
+  </div>
+</form>
