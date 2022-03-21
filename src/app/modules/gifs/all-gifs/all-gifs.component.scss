@@ -1,0 +1,12 @@
+.card {
+  padding: 1rem;
+  border-radius: 2rem;
+  background-color: var(--blueColor);
+  margin: 1rem;
+
+  &:hover {
+    cursor: pointer;
+    border-radius: 2rem 0rem 2rem 0rem;
+    background-color: var(--orangeColor);
+  }
+}
