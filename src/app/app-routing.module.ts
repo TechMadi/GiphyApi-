@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { LandingComponent } from './modules/landing/landing.component';
+import { NotFoundPageComponent } from './modules/not-found-page/not-found-page.component';
 
 const routes: Routes = [
   {
@@ -24,6 +25,10 @@ const routes: Routes = [
   {
     path: 'home',
     component: LandingComponent,
+  },
+  {
+    path: '**',
+    component: NotFoundPageComponent,
   },
 ];
 
